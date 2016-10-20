@@ -19,6 +19,7 @@
 		94B3F3C51D95D71E00FDD144 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B3F3C31D95D71E00FDD144 /* MainInterface.storyboard */; };
 		94B3F3C71D95D71E00FDD144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B3F3C61D95D71E00FDD144 /* Assets.xcassets */; };
 		94DF4EDB1D9EFCD5003D007E /* CoinFlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF4EDA1D9EFCD5003D007E /* CoinFlipViewController.swift */; };
+		94EA33EB1DB8797600BDE851 /* coinFlip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94EA33EA1DB8797600BDE851 /* coinFlip.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		94B3F3C61D95D71E00FDD144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B3F3C81D95D71E00FDD144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94DF4EDA1D9EFCD5003D007E /* CoinFlipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinFlipViewController.swift; sourceTree = "<group>"; };
+		94EA33EA1DB8797600BDE851 /* coinFlip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coinFlip.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				94B3F3C31D95D71E00FDD144 /* MainInterface.storyboard */,
 				94B3F3C61D95D71E00FDD144 /* Assets.xcassets */,
 				94B3F3C81D95D71E00FDD144 /* Info.plist */,
+				94EA33EA1DB8797600BDE851 /* coinFlip.jpg */,
 				9447848D1DA54D9E00CF20EF /* coinHead.jpg */,
 				9447848E1DA54D9E00CF20EF /* coinTail.jpg */,
 			);
@@ -223,6 +226,7 @@
 				94B3F3C71D95D71E00FDD144 /* Assets.xcassets in Resources */,
 				9447848F1DA54D9E00CF20EF /* coinHead.jpg in Resources */,
 				944784901DA54D9E00CF20EF /* coinTail.jpg in Resources */,
+				94EA33EB1DB8797600BDE851 /* coinFlip.jpg in Resources */,
 				94B3F3C51D95D71E00FDD144 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

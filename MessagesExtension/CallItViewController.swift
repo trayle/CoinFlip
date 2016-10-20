@@ -18,15 +18,16 @@ class CallItViewController: UIViewController {
     
     @IBAction func calledHeads(_ sender: AnyObject) {
         coin?.call = true
-        delegate?.buildCallItViewController(self)
+        delegate?.buildCalledItMessage(self)
         printOutcome()
     }
     @IBAction func calledTails(_ sender: AnyObject) {
         coin?.call = false
-        delegate?.buildCallItViewController(self)
+        delegate?.buildCalledItMessage(self)
         printOutcome()
     }
     private func printOutcome() {
+        print("The coin was \(coin?.heads) you called \(coin?.call)")
         if (coin?.calledIt)! {
             print("You win")
         }
@@ -62,6 +63,6 @@ class CallItViewController: UIViewController {
 // This protocol allows communication between view controllers
 protocol CallItViewControllerDelegate: class {
     // Called when the user calls the toss as either heads or tails
-    func buildCallItViewController(_ controller: CallItViewController)
+    func buildCalledItMessage(_ controller: CallItViewController)
 }
 

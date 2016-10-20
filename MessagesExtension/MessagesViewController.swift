@@ -143,7 +143,7 @@ class MessagesViewController: MSMessagesAppViewController {
 
 // Process calls coming from the CoinFlipViewController
 extension MessagesViewController: CoinFlipViewControllerDelegate {
-    func buildCoinFlipViewController(_ controller: CoinFlipViewController) {
+    func buildCoinFlippedMessage(_ controller: CoinFlipViewController) {
         guard let conversation = activeConversation else { fatalError("Expected a conversation") }
         guard let coin = controller.coin else { fatalError("Expected the controller to be displaying a coin") }
         
@@ -165,13 +165,17 @@ extension MessagesViewController: CoinFlipViewControllerDelegate {
 
 // Process calls from the CallItViewController
 extension MessagesViewController: CallItViewControllerDelegate {
-    func buildCallItViewController(_ controller: CallItViewController) {
+    func buildCalledItMessage(_ controller: CallItViewController) {
         guard let conversation = activeConversation else { fatalError("Expected a conversation") }
         guard let coin = controller.coin else { fatalError("Expected the controller to be displaying a coin") }
         guard let messageIn = conversation.selectedMessage else { fatalError("Expected a selected coin flip message") }
         
+        let localName = conversation.localParticipantIdentifier.uuidString
+        let remoteName = conversation.remoteParticipantIdentifiers[0].uuidString
+//        print("the local participant is: \(localName) remote is \(remoteName)")
         // Announce the winner
-        let messageCaption = coin.calledIt ? "$\(conversation.localParticipantIdentifier) won" : "$\(messageIn.senderParticipantIdentifier) won"
+        let messageCaption = coin.calledIt ? "$\(localName) won" : "$\(remoteName) won"
+//        let messageCaption = "$\(localName) me $\(remoteName) them $\(messageIn.senderParticipantIdentifier) sender"
         
         // Create a new message with the same session as any currently selected message.
         let message = composeMessage(with: coin, caption: messageCaption, session: conversation.selectedMessage?.session)

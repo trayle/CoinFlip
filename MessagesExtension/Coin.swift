@@ -12,7 +12,7 @@ import Messages
 struct Coin {
     // MARK: Properties
     
-    var heads: Bool? = arc4random() % 2 == 0
+    var heads: Bool = arc4random() % 2 == 0
     var call: Bool?
     static let flipString = "Flip"
     
@@ -33,10 +33,8 @@ extension Coin {
     var queryItems: [URLQueryItem] {
         var items = [URLQueryItem]()
         
-        if heads != nil {
-            let item = URLQueryItem(name: Coin.flipString, value: heads?.description)
-            items.append(item)
-        }
+        let item = URLQueryItem(name: Coin.flipString, value: heads.description)
+        items.append(item)
         
         return items
     }
@@ -44,7 +42,7 @@ extension Coin {
     // MARK: Initialization
     
     init?(queryItems: [URLQueryItem]) {
-        var heads: Bool?
+        var heads: Bool = true
         
         for queryItem in queryItems {
             guard let value = queryItem.value else { continue }

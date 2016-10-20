@@ -18,8 +18,12 @@ extension Coin {
         // The amount of padding to apply to a sticker when drawn with an opaque background.
         static let opaquePadding = CGSize(width: 60.0, height: 10.0)
     }
+    
     var stickerImage: UIImage {
-        let imageName = "coinTail.jpg"
+        var imageName = "coinFlip.jpg"
+        if isComplete {
+            imageName = heads ? "coinHead.jpg" : "coinTail.jpg"
+        }
         guard let image = UIImage(named: imageName) else { fatalError("Unable to find image named \(imageName)") }
         return image
     }
@@ -29,7 +33,7 @@ extension Coin {
         // Determine the size to draw as a sticker.
         let outputSize: CGSize
         let coinSize: CGSize
-        
+                
         if opaque {
             // Scale the coin image to fit in the center of the sticker.
             let scale = min((StickerProperties.size.width - StickerProperties.opaquePadding.width) / stickerImage.size.height,

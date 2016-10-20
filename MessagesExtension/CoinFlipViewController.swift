@@ -18,7 +18,7 @@ class CoinFlipViewController: UIViewController {
 
     @IBAction func pressedFlipButton(_ sender: AnyObject) {
         print("Flip a Coin")
-        delegate?.buildCoinFlipViewController(self)
+        delegate?.buildCoinFlippedMessage(self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class CoinFlipViewController: UIViewController {
 // This protocol is for communication between view controllers.
 protocol CoinFlipViewControllerDelegate: class {
 // Called when the user taps to flip the coin
-    func buildCoinFlipViewController(_ controller: CoinFlipViewController)
+    func buildCoinFlippedMessage(_ controller: CoinFlipViewController)
 }
 
 
