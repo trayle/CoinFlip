@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942C6A0C1D9DF72E0065D49C /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942C6A0B1D9DF72E0065D49C /* Coin.swift */; };
+		9447848F1DA54D9E00CF20EF /* coinHead.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9447848D1DA54D9E00CF20EF /* coinHead.jpg */; };
+		944784901DA54D9E00CF20EF /* coinTail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9447848E1DA54D9E00CF20EF /* coinTail.jpg */; };
+		944784921DA59D2000CF20EF /* CallItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944784911DA59D2000CF20EF /* CallItViewController.swift */; };
+		947DBF151DA4500D00D1538B /* Coin+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947DBF141DA4500D00D1538B /* Coin+Image.swift */; };
 		94B3F3B31D95D71E00FDD144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B3F3B21D95D71E00FDD144 /* Assets.xcassets */; };
 		94B3F3BA1D95D71E00FDD144 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94B3F3B91D95D71E00FDD144 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94B3F3BF1D95D71E00FDD144 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B3F3BE1D95D71E00FDD144 /* Messages.framework */; };
 		94B3F3C21D95D71E00FDD144 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B3F3C11D95D71E00FDD144 /* MessagesViewController.swift */; };
 		94B3F3C51D95D71E00FDD144 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B3F3C31D95D71E00FDD144 /* MainInterface.storyboard */; };
 		94B3F3C71D95D71E00FDD144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B3F3C61D95D71E00FDD144 /* Assets.xcassets */; };
+		94DF4EDB1D9EFCD5003D007E /* CoinFlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF4EDA1D9EFCD5003D007E /* CoinFlipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		942C6A0B1D9DF72E0065D49C /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		9447848D1DA54D9E00CF20EF /* coinHead.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coinHead.jpg; sourceTree = "<group>"; };
+		9447848E1DA54D9E00CF20EF /* coinTail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coinTail.jpg; sourceTree = "<group>"; };
+		944784911DA59D2000CF20EF /* CallItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallItViewController.swift; sourceTree = "<group>"; };
+		947DBF141DA4500D00D1538B /* Coin+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coin+Image.swift"; sourceTree = "<group>"; };
 		94B3F3AF1D95D71D00FDD144 /* CoinFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B3F3B21D95D71E00FDD144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B3F3B41D95D71E00FDD144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		94B3F3C41D95D71E00FDD144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		94B3F3C61D95D71E00FDD144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B3F3C81D95D71E00FDD144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94DF4EDA1D9EFCD5003D007E /* CoinFlipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinFlipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +115,15 @@
 			isa = PBXGroup;
 			children = (
 				94B3F3C11D95D71E00FDD144 /* MessagesViewController.swift */,
+				94DF4EDA1D9EFCD5003D007E /* CoinFlipViewController.swift */,
+				944784911DA59D2000CF20EF /* CallItViewController.swift */,
+				942C6A0B1D9DF72E0065D49C /* Coin.swift */,
+				947DBF141DA4500D00D1538B /* Coin+Image.swift */,
 				94B3F3C31D95D71E00FDD144 /* MainInterface.storyboard */,
 				94B3F3C61D95D71E00FDD144 /* Assets.xcassets */,
 				94B3F3C81D95D71E00FDD144 /* Info.plist */,
+				9447848D1DA54D9E00CF20EF /* coinHead.jpg */,
+				9447848E1DA54D9E00CF20EF /* coinTail.jpg */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -159,10 +177,13 @@
 				TargetAttributes = {
 					94B3F3AE1D95D71D00FDD144 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3S9R67PS4W;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					94B3F3B81D95D71E00FDD144 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3S9R67PS4W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B3F3C71D95D71E00FDD144 /* Assets.xcassets in Resources */,
+				9447848F1DA54D9E00CF20EF /* coinHead.jpg in Resources */,
+				944784901DA54D9E00CF20EF /* coinTail.jpg in Resources */,
 				94B3F3C51D95D71E00FDD144 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B3F3C21D95D71E00FDD144 /* MessagesViewController.swift in Sources */,
+				94DF4EDB1D9EFCD5003D007E /* CoinFlipViewController.swift in Sources */,
+				944784921DA59D2000CF20EF /* CallItViewController.swift in Sources */,
+				947DBF151DA4500D00D1538B /* Coin+Image.swift in Sources */,
+				942C6A0C1D9DF72E0065D49C /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 3S9R67PS4W;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.knoable.CoinFlip.MessagesExtension;
@@ -345,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 3S9R67PS4W;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.knoable.CoinFlip.MessagesExtension;
@@ -359,9 +388,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 3S9R67PS4W;
 				INFOPLIST_FILE = CoinFlip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.knoable.CoinFlip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,7 +405,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 3S9R67PS4W;
 				INFOPLIST_FILE = CoinFlip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.knoable.CoinFlip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -399,6 +435,7 @@
 				94B3F3CD1D95D71E00FDD144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94B3F3CF1D95D71E00FDD144 /* Build configuration list for PBXNativeTarget "CoinFlip" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +444,7 @@
 				94B3F3D11D95D71E00FDD144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
