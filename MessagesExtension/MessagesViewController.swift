@@ -78,7 +78,7 @@ class MessagesViewController: MSMessagesAppViewController {
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
     private func presentViewController(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
-        // Determine the controller to present.
+        // Determine if this user is receiving a coin flip text or wants to send one.
         var controller: UIViewController
         
         // If coin information is in the message, this user needs to call heads or tails
@@ -177,7 +177,7 @@ extension MessagesViewController: CallItViewControllerDelegate {
         let messageCaption = coin.calledIt ? "$\(localName) won" : "$\(remoteName) won"
 //        let messageCaption = "$\(localName) me $\(remoteName) them $\(messageIn.senderParticipantIdentifier) sender"
         
-        // Create a new message with the same session as any currently selected message.
+        // Create a new message to send the flip results back to the sender.
         let message = composeMessage(with: coin, caption: messageCaption, session: conversation.selectedMessage?.session)
         
         // Add the message to the conversation.
